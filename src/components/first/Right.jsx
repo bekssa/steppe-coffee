@@ -1,12 +1,15 @@
-import saigak from "../../assets/Saigak-killer.png"
+import saigak from "../../assets/saigak.mp4"
 
 export const Right = () => {
     return (
-        <div className=" w-full max-w-[350px] md:max-w-[400px]">
-            <img
+        <div className=" w-full ">
+            <video
                 src={saigak}
-                alt="сайгак"
-                className="w-full h-auto drop-shadow-2xl"
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="rounded-[40px]"
             />
         </div>
     );
